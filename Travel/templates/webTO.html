@@ -1,0 +1,176 @@
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>{% blocktrans %}Tour Operator:{% endblocktrans %} {{ NameTO }}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ STATIC_URL }}bootstrap.min.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}jquery-ui.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="{{ STATIC_URL }}ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ STATIC_URL }}Prototype.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="{{ STATIC_URL }}ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./webto">{% blocktrans %}Tour Operator:{% endblocktrans %} {{ NameTO }}</a>
+        </div>
+     </div>
+    </nav>
+    <div class="uno">
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-5" >
+          <h2>{% trans "Trends" %}</h2>
+<ul> 
+<div class="panel-group" role="tablist"> 
+<div class="panel panel-default"> 
+<div class="panel-heading" role="tab" id="collapseListGroupHeading1"> 
+<h4 class="panel-title"> 
+<a class="" role="button" data-toggle="collapse" href="#collapseListGroup1" aria-expanded="true" aria-controls="collapseListGroup1"> United States </a>
+</h4> 
+</div>
+ <div id="collapseListGroup1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading1" aria-expanded="true" style=""> 
+<ul class="list-group"> 
+<li class="list-group-item"><div class="panel-group" role="tablist"> 
+<div class="panel panel-default"> 
+<div class="panel-heading" role="tab" id="collapseListGroupHeading11"> 
+<h4 class="panel-title"> <span>
+<a class="" role="button" data-toggle="collapse" href="#collapseListGroup11" aria-expanded="true" aria-controls="collapseListGroup11">Mayan Riviera 20 pax </a>
+</h4> 
+</div>
+ <div id="collapseListGroup11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading11" aria-expanded="true" style=""> 
+<ul class="list-group"> 
+<li class="list-group-item">New York State 10 pax</li>
+ <li class="list-group-item">Florida 5 pax</li>
+ <li class="list-group-item">Texas 5 pax</li>
+ </ul>  
+</div> 
+</div>
+ </div></li>
+ <li class="list-group-item"><div class="panel-group" role="tablist"> 
+<div class="panel panel-default"> 
+<div class="panel-heading" role="tab" id="collapseListGroupHeading12"> 
+<h4 class="panel-title"> <span>
+<a class="" role="button" data-toggle="collapse" href="#collapseListGroup12" aria-expanded="true" aria-controls="collapseListGroup12">Cap San Lucas 60 pax </a>
+</h4> 
+</div>
+ <div id="collapseListGroup12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading12" aria-expanded="true" style=""> 
+<ul class="list-group"> 
+<li class="list-group-item">New York State 40 pax</li>
+ <li class="list-group-item">Florida 20 pax</li>
+ </ul>  
+</div> 
+</div>
+ </div></li>
+ <li class="list-group-item"><div class="panel-group" role="tablist"> 
+<div class="panel panel-default"> 
+<div class="panel-heading" role="tab" id="collapseListGroupHeading12"> 
+<h4 class="panel-title"> <span>
+<a class="" role="button" data-toggle="collapse" href="#collapseListGroup13" aria-expanded="true" aria-controls="collapseListGroup13">Jamaica 80 pax </a>
+</h4> 
+</div>
+ <div id="collapseListGroup13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading13" aria-expanded="true" style=""> 
+<ul class="list-group"> 
+<li class="list-group-item">Florida 40 pax</li>
+ <li class="list-group-item">New York State 40 pax</li>
+  </ul>  
+</div> 
+</div>
+ </div></li>
+ </ul>  
+</div> 
+</div>
+ </div> 
+<ul>
+<div class="panel-group" role="tablist"> 
+<div class="panel panel-default"> 
+<div class="panel-heading" role="tab" id="collapseListGroupHeading2"> 
+<h4 class="panel-title"> 
+<a class="" role="button" data-toggle="collapse" href="#collapseListGroup2" aria-expanded="true" aria-controls="collapseListGroup2"> New York State </a>
+</h4> 
+</div>
+ <div id="collapseListGroup2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading2" aria-expanded="true" style=""> 
+<ul class="list-group"> 
+<li class="list-group-item">Jamaica 40 pax</li>
+ <li class="list-group-item">Cap San Lucas 40 pax</li>
+ <li class="list-group-item">Mayan Riviera 10 pax</li>
+ </ul>  
+</div> 
+</div>
+ </div>  </ul></ul>   
+        </div>
+        <div class="col-md-7">
+          <h2>{% trans "Upload" %}</h2>
+<form>
+  <div class="form-group">
+     <input type="file" id="exampleInputFile">
+  </div>
+</form>
+        </div>
+      </div>
+
+      <hr>
+
+
+      <footer>
+        <p>© 2015 Company, Inc.</p>
+      </footer>
+    </div> <!-- /container -->
+
+      </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{ STATIC_URL }}jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}jquery-ui.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="{{ STATIC_URL }}bootstrap.min.js"></script>
+    <script src="{{ STATIC_URL }}PrototypeTO.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="{{ STATIC_URL }}ie10-viewport-bug-workaround.js"></script>
+    <script>
+        $('#collapseListGroup1').on('shown.bs.collapse', function () {
+        $('#collapseListGroup2').collapse('hide')
+        })
+
+        $('#collapseListGroup2').on('shown.bs.collapse', function () {
+        $('#collapseListGroup1').collapse('hide')
+        })
+
+    </script>
+
+
+</body></html>

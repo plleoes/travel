@@ -1,0 +1,498 @@
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>{% blocktrans %}Travel Agent:{% endblocktrans %} {{ NameTA }}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/master/build/css/bootstrap-datetimepicker.min.css">
+    <link href="{{ STATIC_URL }}bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+
+    <!-- Custom styles for this template -->
+    <link href="{{ STATIC_URL }}prototype.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css" rel="stylesheet">
+    <link rel="stylesheet"  href="{{ STATIC_URL }}bootstrap-spinedit.css" >
+
+
+</head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./webta">{% blocktrans %}Travel Agent:{% endblocktrans %} {{ NameTA }}</a>
+        </div>
+     </div>
+    </nav>
+
+ <div class="uno">
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-3" >
+          <h2>{% trans "Trends" %}</h2>
+<ul> 
+<div class="panel-group" role="tablist"> 
+<div class="panel panel-default"> 
+<div class="panel-heading" role="tab" id="collapseListGroupHeading1"> 
+<h4 class="panel-title"> 
+<a class="" role="button" data-toggle="collapse" href="#collapseListGroup1" aria-expanded="true" aria-controls="collapseListGroup1"> New York State </a>
+</h4> 
+</div>
+ <div id="collapseListGroup1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading1" aria-expanded="true" style=""> 
+<ul class="list-group"> 
+<li class="list-group-item">Jamaica 1150$</li>
+ <li class="list-group-item">San Lucas Cap 1000$</li>
+ <li class="list-group-item">Mayan Riviera 900$</li>
+ </ul>  
+</div> 
+</div>
+ </div> 
+<ul>
+<div class="panel-group" role="tablist"> 
+<div class="panel panel-default"> 
+<div class="panel-heading" role="tab" id="collapseListGroupHeading2"> 
+<h4 class="panel-title"> 
+<a class="" role="button" data-toggle="collapse" href="#collapseListGroup2" aria-expanded="true" aria-controls="collapseListGroup2"> New York City </a>
+</h4> 
+</div>
+ <div id="collapseListGroup2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading2" aria-expanded="true" style=""> 
+<ul class="list-group"> 
+<li class="list-group-item">San Lucas Cap 1300$</li>
+ <li class="list-group-item">Mayan Riviera 1500$</li>
+ <li class="list-group-item">Jamaica 1350$</li>
+ </ul>  
+</div> 
+</div>
+ </div>  </ul></ul>   
+        </div>
+        <div class="col-md-3">
+          <h2>{% blocktrans %}Travel Suggestions{% endblocktrans %}</h2>
+        <div class="inner">
+
+       </div>
+       </div>
+        <div class="col-md-6">
+          <h2>{% trans "Search" %}</h2>
+<form>
+  <div class="form-group">
+    <input type="text" class="typeahead form-control" id="InputSearch" placeholder="{% trans "Search" %}">{% csrf_token %}
+  </div>
+</form>
+                    <div class="inners">
+
+       </div>
+
+        </div>
+      </div>
+
+      <hr>
+
+
+      <footer>
+        <p>© 2015 Company, Inc.</p>
+      </footer>
+    </div> <!-- /container -->
+      </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js">
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="{{ STATIC_URL }}bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+    <script src="{{ STATIC_URL }}bootstrap-spinedit.js"></script>
+    <script src="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/master/build/js/bootstrap-datetimepicker.min.js"></script>
+
+    <script src="{{ STATIC_URL }}typeahead.bundle.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
+    <script src="https://use.fontawesome.com/f16de319ce.js"></script>
+    <script>
+var dat = [];
+
+
+
+var terms = new Bloodhound({
+  datumTokenizer: Bloodhound.tokenizers.whitespace,
+  queryTokenizer: Bloodhound.tokenizers.whitespace,
+  // url points to a json file that contains an array of country names, see
+  // https://github.com/twitter/typeahead.js/blob/gh-pages/data/countries.json
+  prefetch: './terms'
+});
+
+terms.clearPrefetchCache()
+terms.initialize();
+
+$('#InputSearch').typeahead({
+  autoselect: true
+}, {
+  name: 'terms',
+  source: terms
+});
+
+
+$('#InputSearch').focusout(function() {
+  $(".tt-menu").hide()
+});
+
+$('#InputSearch').bind('typeahead:change', function() {
+ // $(".tt-menu").show();
+  search($(this).val());
+});
+
+$('#InputSearch').bind('typeahead:closed', function(ev, suggestion) {
+  $(".tt-menu").hide()
+});
+
+
+$('#InputSearch').bind('typeahead:select', function(ev, suggestion) {
+  $(".tt-menu").hide()
+  search($(this).val());
+});
+
+$('#InputSearch').keypress(function(e) {
+    if(e.which == 13) {
+        $(".tt-menu").hide()
+        search($('#InputSearch').val());
+        
+    }
+});
+
+function search (text) {
+    var l = '{% trans "Loading" %}';
+    if( !($('#lo1').length) )
+    {
+    $('<div class="lo" id="lo1"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>' + l + '...</div>').appendTo( ".inners" );
+    }
+    $.post( "./tsearch", { 'csrfmiddlewaretoken': '{{ csrf_token }}', text: text })
+      .done(function( data ) {
+          dat = data;
+          $( "#lo1" ).remove();
+	  $( ".tt-menu" ).hide();
+          $( ".list-group-item" ).remove();
+      if( data == "" ) {
+          $( ".list-group-item" ).remove();
+      }
+      else {
+         for(var i in data)
+                {
+                    var p = '{% trans "Price" %}';
+                    var u = '{% trans "$" %}';
+                    $( '<div class="list-group"> \
+                        <a id="t1" href="#" class="list-group-item"> \
+                        <h4 class="list-group-item-heading">' + data[i].DestinationRegion + ' ' + data[i].DestinationCountry + ' ' + data[i].DestinationZone + '</h4> \
+                        <p class="list-group-item-text">' + data[i].DestinationCity + ' ' + data[i].Accommodation +  ' ' + p + ': ' + data[i].Pricefor2pax.toString() + u + ' ' + data[i].CompanyName + '</p> \
+                        <button id="button1" type="button"  onclick="ShowPackage(' + i + ');" class="btn btn-default" aria-label="Left Align"> \
+                        <span >></span> \
+                        </button> \
+                         </a> \
+                        </div>' ).appendTo( ".inners" );
+            }
+      }
+      });
+
+}
+
+
+function ShowPackage (i) {
+    var tadates = [];
+    var o = '{% trans "Origin" %}';
+    var b = '{% trans "Book" %}';
+    var p = '{% trans "Places" %}';
+    var a = '{% trans "Adults" %}';
+    var ind = '{% trans "Individual" %}';
+    var dou = '{% trans "Double" %}';
+    var thr = '{% trans "More than 2" %}';
+    var child = '{% trans "Childs" %}';
+    var dept = '{% trans "Departure date" %}';
+    var ex = '{% trans "Excursions" %}';
+
+    var mes = '<div class="container"><h2>' + b + '</h2><p>' + o + ':</p><form role="form">';
+    var title = "";
+    var today = new Date();
+    var dbegin = new Date(parseFloat(dat[i].DateBegin)*1000);
+    var bdate;
+    for(var t in dat[i].TDates){
+        tadates[t] = new Date(parseFloat(dat[i].TDates[t])*1000);
+    }
+    for(var n in dat[i].Origins){
+        mes = mes.concat("<div class=\"radio\"><label><input type=\"radio\" name=\"optradioor\" value=\"" + n + "\" id=\"optradioor" + n + "\">");
+        mes = mes.concat(dat[i].Origins[n].OriginCity);
+        mes = mes.concat("</label></div>");
+    }
+    mes = mes.concat('<p>' + dat[i].DestinationCity + ' ' + dat[i].Accommodation + '</p>');
+    mes = mes.concat("<p>" + p + ":</p>");
+    mes = mes.concat("<p>" + a + "</p>");
+    mes = mes.concat("<div class=\"radio\"><label><input type=\"radio\" id=\"optradio1\" name=\"optradiop\" value=\"1\" onclick=\"ClPax()\" >" + ind + "</label></div>");
+    mes = mes.concat("<div class=\"radio\"><label><input type=\"radio\" id=\"optradio2\" name=\"optradiop\" value=\"2\" onclick=\"ClPax()\" >" + dou + "</label></div>");
+    mes = mes.concat("<div class=\"radio\"><label><input type=\"radio\" id=\"optradio3\" name=\"optradiop\" onclick=\"SelPax()\" >" + thr + "</label><input id=\"npax\" type=\"text\" class=\"pax form-control\" onclick=\"SelPax()\" /><span class=\"btn-group\"><button onclick=\"PaxUp()\" class=\"btn\" ><i class=\"glyphicon glyphicon-menu-up\"></i></button><button class=\"btn\" onclick=\"PaxDown()\"><i class=\"glyphicon glyphicon-menu-down\"></i></button></span></div>");
+    mes = mes.concat("<p>" + child + ": <input id=\"nchild\" type=\"text\" class=\"pax form-control\" onclick=\"SelChild()\" /><span class=\"btn-group\"><button onclick=\"ChlUp()\" class=\"btn\" ><i class=\"glyphicon glyphicon-menu-up\"></i></button><button class=\"btn\" onclick=\"ChlDown()\"><i class=\"glyphicon glyphicon-menu-down\"></i></button></span></div></p>");
+    mes = mes.concat("<p>" + dept + ":</p>");
+    mes = mes.concat('<div class="input-group date" id="datetimepicker5"><input type="text" class="form-control" /><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span></div>')
+    mes = mes.concat("<p>" + ex + ":</p>");
+    for(var n in dat[i].Excursions){
+        if( dat[i].Excursions[n].ExcursionDestination ) {
+            mes = mes.concat("<div class=\"checkbox\"><label><input type=\"checkbox\" name=\"chkesc" + n + "\" value=\"" + n + "\" id=\"idchkesc" + n + "\">");
+            mes = mes.concat(dat[i].Excursions[n].ExcursionDestination);
+            mes = mes.concat("</label></div>");
+        }
+    }
+
+    mes = mes.concat("</form></div>");
+    title = title.concat( dat[i].DestinationCity + ' ' + dat[i].Accommodation );
+    BootstrapDialog.show({
+            title: title,
+            message: mes,
+            onshown: function(dialog) {
+            if( today > dbegin ) {
+                bdate = today;
+            }
+            else {
+                bdate = dbegin;
+            }
+            $('#datetimepicker5').datetimepicker({
+                    defaultDate: bdate,
+                    enabledDates: tadates
+
+                });
+            }
+         });
+
+     $.post( "./pack", { 'csrfmiddlewaretoken': '{{ csrf_token }}', DestinationRegion: dat[i].DestinationRegion , DestinatonCountry: dat[i].DestinatonCountry, DestinationZone: dat[i].DestinationZone, DestinatonEstate: dat[i].DestinatonEstate, DestinatonCity: dat[i].DestinatonCity, Accommodation: dat[i].Accommodation, Term: $('#InputSearch').val()})
+}
+
+function PaxUp () {
+    $("#optradio3").prop("checked", true);
+    if($.trim($('#npax').val()) == "") {
+        $("#npax").val("3");
+    }
+    var p = parseInt($("#npax").val());
+    p++;
+    $("#npax").val(p.toString());
+}
+
+function PaxDown () {
+    $("#optradio3").prop("checked", true);
+    if($.trim($('#npax').val()) == "") {
+        $("#npax").val("3");
+    }
+
+    var p = parseInt($("#npax").val());
+    if(parseInt($("#npax").val()) <= 3) {
+        $("#npax").val("3");
+    }
+    else {
+        p--;
+        $("#npax").val(p.toString());
+    }
+}
+
+function ChlUp () {
+    $("#optchb1").prop("checked", true);
+    if($.trim($('#nchild').val()) == "") {
+        $("#nchild").val("0");
+    }
+    var p = parseInt($("#nchild").val());
+    p++;
+    $("#nchild").val(p.toString());
+}
+
+function ChlDown () {
+    $("#optchb1").prop("checked", true);
+    if($.trim($('#nchild').val()) == "") {
+        $("#nchild").val("0");
+    }
+
+    var p = parseInt($("#nchild").val());
+    if(parseInt($("#nchild").val()) <= 0) {
+        $("#nchild").val("0");
+    }
+    else {
+        p--;
+        $("#nchild").val(p.toString());
+    }
+}
+
+
+
+function SelPax () {
+    $("#optradio3").prop("checked", true);
+    if($.trim($('#npax').val()) == "") {
+        $("#npax").val("3");
+    }
+}
+
+function SelChl () {
+    if($('#optchb1').checked()) {
+        if ($.trim($('#nchild').val()) == "") {
+            $("#nchild").val("0");
+        }
+    }
+    else {
+        $("#nchild").val("");
+    }
+}
+
+
+function SelChild () {
+        $("#optchb1").prop("checked", true);
+        SelChl ();
+}
+
+function ClPax () {
+        $("#npax").val("");
+}
+
+
+$('#collapseListGroup1').on('shown.bs.collapse', function () {
+ $('#collapseListGroup2').collapse('hide');
+$( "#t1" ).remove();
+$( "#dialog1" ).remove();
+$( "#t2" ).remove();
+$( "#dialog2" ).remove();
+$( "#t3" ).remove();
+$( "#dialog3" ).remove();
+$( '<div class="list-group"> \
+  <a id="t1" href="#" class="list-group-item"> \
+    <h4 class="list-group-item-heading">Jamaica</h4> \
+    <p class="list-group-item-text">Jamaica 4 star hotel 7 days 1100$.</p> \
+    <button id="button1" type="button" class="btn btn-default" aria-label="Left Align"> \
+    <span >></span> \
+    </button> \
+    <div id="dialog1" title="Jamaica"><p >Jamaica 4 star hotel 7 days 1100$ various excursions.</p></div> \
+  </a> \
+</div>' ).appendTo( ".inner" );
+$( '<div class="list-group"> \
+  <a id="t2" href="#" class="list-group-item"> \
+    <h4 class="list-group-item-heading">San Lucas Cap</h4> \
+    <p class="list-group-item-text">San Lucas Cap 4 star hotel 7 days 990$.</p> \
+    <button id="button2" type="button" class="btn btn-default" aria-label="Left Align"> \
+    <span >></span> \
+    </button> \
+    <div id="dialog2" title="San Lucas Cap"><p >San Lucas Cap 4 star hotel 7 days 990$ various excursions.</p></div> \
+  </a> \
+</div>' ).appendTo( ".inner" );
+$( '<div class="list-group"> \
+  <a id="t3" href="#" class="list-group-item"> \
+    <h4 class="list-group-item-heading">Mayan Riviera</h4> \
+    <p class="list-group-item-text">Mayan Riviera Cap 4 star hotel 7 days 890$.</p> \
+    <button id="button3" type="button" class="btn btn-default" aria-label="Left Align"> \
+    <span >></span> \
+    </button> \
+    <div id="dialog3" title="Mayan Riviera"><p >Mayan Riviera Cap 4 star hotel 7 days 890$ various excursions.</p></div> \
+  </a> \
+</div>' ).appendTo( ".inner" );
+$( "#dialog1" ).dialog({ autoOpen: false, modal: true});
+$( "#dialog2" ).dialog({ autoOpen: false, modal: true});
+$( "#dialog3" ).dialog({ autoOpen: false, modal: true});
+$( "#button1" ).click(function() {
+  $( "#dialog1" ).dialog( "open" );
+  $( "#dialog2" ).dialog( "close" );
+  $( "#dialog3" ).dialog( "close" );
+
+});
+$( "#button2" ).click(function() {
+  $( "#dialog2" ).dialog( "open" );
+  $( "#dialog1" ).dialog( "close" );
+  $( "#dialog3" ).dialog( "close" );
+
+});
+$( "#button3" ).click(function() {
+  $( "#dialog3" ).dialog( "open" );
+  $( "#dialog2" ).dialog( "close" );
+  $( "#dialog1" ).dialog( "close" );
+
+});
+
+})
+
+$('#collapseListGroup2').on('shown.bs.collapse', function () {
+ $('#collapseListGroup1').collapse('hide');
+$( "#t1" ).remove();
+$( "#dialog1" ).remove();
+$( "#t2" ).remove();
+$( "#dialog2" ).remove();
+$( "#t3" ).remove();
+$( "#dialog3" ).remove();
+$( '<div class="list-group"> \
+  <a id="t1" href="#" class="list-group-item"> \
+    <h4 class="list-group-item-heading">San Lucas Cap</h4> \
+    <p class="list-group-item-text">San Lucas Cap 5 star hotel 7 days 1500$.</p> \
+    <button id="button1" type="button" class="btn btn-default" aria-label="Left Align"> \
+    <span >></span> \
+    </button> \
+    <div id="dialog1" title="San Lucas Cap"><p >San Lucas Cap 5 star hotel 7 days 1500$ various excursions.</p></div> \
+  </a> \
+</div>' ).appendTo( ".inner" );
+$( '<div class="list-group"> \
+  <a id="t2" href="#" class="list-group-item"> \
+    <h4 class="list-group-item-heading">Mayan Riviera</h4> \
+    <p class="list-group-item-text">Mayan Riviera Cap 5 star hotel 7 days 1700$.</p> \
+    <button id="button2" type="button" class="btn btn-default" aria-label="Left Align"> \
+    <span >></span> \
+    </button> \
+    <div id="dialog2" title="Mayan Riviera"><p >Mayan Riviera Cap 5 star hotel 7 days 1700$ various excursions.</p></div> \
+  </a> \
+</div>' ).appendTo( ".inner" );
+$( '<div class="list-group"> \
+  <a id="t3" href="#" class="list-group-item"> \
+    <h4 class="list-group-item-heading">Jamaica</h4> \
+    <p class="list-group-item-text">Jamaica 5 star hotel 7 days 1400$.</p> \
+    <button id="button3" type="button" class="btn btn-default" aria-label="Left Align"> \
+    <span >></span> \
+    </button> \
+    <div id="dialog3" title="Jamaica"><p >Jamaica 5 star hotel 7 days 1400$ various excursions.</p></div> \
+  </a> \
+</div>' ).appendTo( ".inner" );
+$( "#dialog1" ).dialog({ autoOpen: false, modal: true});
+$( "#dialog2" ).dialog({ autoOpen: false, modal: true});
+$( "#dialog3" ).dialog({ autoOpen: false, modal: true});
+$( "#button1" ).click(function() {
+  $( "#dialog1" ).dialog( "open" );
+  $( "#dialog2" ).dialog( "close" );
+  $( "#dialog3" ).dialog( "close" );
+
+});
+$( "#button2" ).click(function() {
+  $( "#dialog2" ).dialog( "open" );
+  $( "#dialog1" ).dialog( "close" );
+  $( "#dialog3" ).dialog( "close" );
+
+});
+$( "#button3" ).click(function() {
+  $( "#dialog3" ).dialog( "open" );
+  $( "#dialog2" ).dialog( "close" );
+  $( "#dialog1" ).dialog( "close" );
+
+});
+
+})
+
+
+
+    </script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+
+</body></html>

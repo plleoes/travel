@@ -1,0 +1,377 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-20 19:04+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\emails\emailforget-body-html.html:195 .\templates\ForgetEmail.html:196
+#: .\templates\emails\emailforget-body-html.html:195 .\travel\views.py:1072
+msgid "Email for Reset Password"
+msgstr "Email para cambio de password"
+
+#: .\emails\emailforget-body-html.html:200 .\templates\ForgetEmail.html:201
+#: .\templates\emails\emailforget-body-html.html:200 .\travel\views.py:1073
+msgid "For Reset Password click here"
+msgstr "Para cambiar el password haz click aqui"
+
+#: .\templates\CancelationPolicyTO.html:13
+msgid "Cancelation Policies for Tour Operators"
+msgstr "Formulario de politicas de cancelacion para tour operadores"
+
+#: .\templates\CancelationPolicyTO.html:41 .\templates\webTO.html.py:13
+#: .\templates\webTO.html:47
+msgid "Tour Operator:"
+msgstr "Tour Operador:"
+
+#: .\templates\CancelationPolicyTO.html:49
+msgid "Cancel Policies Form for Tour Operator:"
+msgstr "Formulario de politicas de cancelacion para tour operadores"
+
+#: .\templates\CancelationPolicyTO.html:50
+msgid "Add cancel policy"
+msgstr "Añadir politica de cancelacion"
+
+#: .\templates\CancelationPolicyTO.html:87
+#: .\templates\CancelationPolicyTO.html:186
+msgid "Days before depart"
+msgstr "Dias antes de la salida"
+
+#: .\templates\CancelationPolicyTO.html:88
+#: .\templates\CancelationPolicyTO.html:187
+msgid "Enter number of days before depart..."
+msgstr "Introduzca numero de dias antes de la salida"
+
+#: .\templates\CancelationPolicyTO.html:95
+#: .\templates\CancelationPolicyTO.html:192
+msgid "Expenses in"
+msgstr "Gastos en:"
+
+#: .\templates\CancelationPolicyTO.html:96
+#: .\templates\CancelationPolicyTO.html:193
+#, python-format
+msgid "Enter expenses in %%.."
+msgstr "Introduzca gastos en %%"
+
+#: .\templates\CancelationPolicyTO.html:103
+msgid "Minimun Expenses?"
+msgstr "Gastos minimos?"
+
+#: .\templates\CancelationPolicyTO.html:104
+msgid "Minimun Money Expenses?"
+msgstr "Gastos minimos en dinero?"
+
+#: .\templates\CancelationPolicyTO.html:111 .\templates\EmailForget.html:60
+#: .\templates\Forget.html.py:74 .\templates\RegistrationTA.html:158
+#: .\templates\RegistrationTO.html:157
+msgid "Submit"
+msgstr "Enviar"
+
+#: .\templates\CancelationPolicyTO.html:167
+msgid "Expenses in money"
+msgstr "Gastos en dinero"
+
+#: .\templates\CancelationPolicyTO.html:168
+msgid "Expenses in money..."
+msgstr "Gastos en dinero"
+
+#: .\templates\CancelationPolicyTO.html:175
+#, python-format
+msgid "Expenses in %%"
+msgstr "Gastos en %%"
+
+#: .\templates\CancelationPolicyTO.html:176
+#, python-format
+msgid "Expenses in %%..."
+msgstr "Gastos en %%"
+
+#: .\templates\CancelationPolicyTO.html:198
+msgid "Delete policy"
+msgstr "Borrar Politica"
+
+#: .\templates\EmailForget.html:12 .\templates\EmailForget.html.py:40
+#: .\templates\EmailForget.html:48
+msgid "Forget Password"
+msgstr "Ha olvidado la clave"
+
+#: .\templates\EmailForget.html:54 .\templates\RegistrationTA.html.py:133
+#: .\templates\RegistrationTO.html:132
+msgid "Email Address"
+msgstr "Direccion de Email"
+
+#: .\templates\EmailForget.html:55 .\templates\RegistrationTA.html.py:134
+#: .\templates\RegistrationTO.html:133
+msgid "Enter Email Address Here.."
+msgstr "Introduzca email"
+
+#: .\templates\Forget.html:13 .\templates\Forget.html.py:41
+#: .\templates\Forget.html:49
+msgid "Change Password"
+msgstr "Cambiar Password"
+
+#: .\templates\Forget.html:61 .\templates\RegistrationTA.html.py:145
+#: .\templates\RegistrationTO.html:144
+msgid "Password"
+msgstr "Clave de acceso"
+
+#: .\templates\Forget.html:62 .\templates\RegistrationTA.html.py:146
+#: .\templates\RegistrationTO.html:145
+msgid "Enter Password Here.."
+msgstr "Introduzca clave de acceso"
+
+#: .\templates\Forget.html:67 .\templates\Forget.html.py:68
+#: .\templates\RegistrationTA.html:151 .\templates\RegistrationTA.html:152
+#: .\templates\RegistrationTO.html:150 .\templates\RegistrationTO.html:151
+msgid "Repeat Password"
+msgstr "Repita clave de acceso"
+
+#: .\templates\Index.html:43
+msgid "Start"
+msgstr "Iniciar"
+
+#: .\templates\Index.html:46
+msgid "Home"
+msgstr "Inicio"
+
+#: .\templates\Index.html:49
+msgid "About"
+msgstr "Acerca de"
+
+#: .\templates\Index.html:52
+msgid "Contact"
+msgstr "Contacto"
+
+#: .\templates\Index.html:64
+msgid "Travel Agents"
+msgstr "Agencias de Viajes"
+
+#: .\templates\Index.html:65
+msgid "Tour Operators"
+msgstr "Tour Operadores"
+
+#: .\templates\Index.html:69
+msgid "Login for Travel Agents"
+msgstr "Login para agencias de viajes"
+
+#: .\templates\Index.html:87 .\templates\Index.html.py:128
+msgid "Remember me"
+msgstr "Recuerdame"
+
+#: .\templates\Index.html:94 .\templates\Index.html.py:135
+msgid "Sign in"
+msgstr "Acceder"
+
+#: .\templates\Index.html:97 .\templates\RegistrationTA.html.py:13
+msgid "Registration for Travel Agents"
+msgstr "Registro para Agencias de Viajes"
+
+#: .\templates\Index.html:100 .\templates\Index.html.py:141
+msgid "Forget Password?"
+msgstr "¿Olvidó la clave?"
+
+#: .\templates\Index.html:110
+msgid "Login for Tour Operators"
+msgstr "Login para Tour Operadores"
+
+#: .\templates\Index.html:138 .\templates\RegistrationTO.html.py:13
+msgid "Registration for Tour Operators"
+msgstr "Registro para Tour Operadores"
+
+#: .\templates\Index.html:157
+msgid "Find Out More"
+msgstr "Enseñame mas..."
+
+#: .\templates\Index.html:170
+msgid " is your source for actual trends in travels!"
+msgstr " es tu fuente para saber las tendencias actuales en viajes"
+
+#: .\templates\Index.html:171
+msgid ""
+"What's the best selling destinations? In your local area? In your state/"
+"province? In your country? we show you the answers."
+msgstr ""
+"¿Cuales son los destinos superventas? ¿En tu zona local? ¿En tu estado o "
+"provincia? ¿En tu pais? Te enseñamos las respuestas."
+
+#: .\templates\RegistrationTA.html:41
+msgid "Travel Agent"
+msgstr "Agencia de Viajes"
+
+#: .\templates\RegistrationTA.html:49
+msgid "Registration Form for Travel Agents"
+msgstr "Formulario para Agencias de viajes"
+
+#: .\templates\RegistrationTA.html:57 .\templates\RegistrationTA.html.py:58
+#: .\templates\RegistrationTO.html:57 .\templates\RegistrationTO.html.py:58
+msgid "Company Name"
+msgstr "Nombre de Empresa"
+
+#: .\templates\RegistrationTA.html:81 .\templates\RegistrationTO.html.py:81
+msgid "Address"
+msgstr "Dirección"
+
+#: .\templates\RegistrationTA.html:82 .\templates\RegistrationTO.html.py:82
+msgid "Enter Address Here.."
+msgstr "Introduzca la dirección"
+
+#: .\templates\RegistrationTA.html:90 .\templates\RegistrationTO.html.py:90
+msgid "City"
+msgstr "Ciudad"
+
+#: .\templates\RegistrationTA.html:91 .\templates\RegistrationTO.html.py:91
+msgid "Enter City Name Here.."
+msgstr "Introduzca la ciudad"
+
+#: .\templates\RegistrationTA.html:98 .\templates\RegistrationTO.html.py:98
+msgid "State"
+msgstr "Provincia"
+
+#: .\templates\RegistrationTA.html:99 .\templates\RegistrationTO.html.py:99
+msgid "Enter State Name Here.."
+msgstr "Introduzca la provincia"
+
+#: .\templates\RegistrationTA.html:106 .\templates\RegistrationTO.html:106
+msgid "Zip"
+msgstr "Código postal"
+
+#: .\templates\RegistrationTA.html:107 .\templates\RegistrationTO.html:107
+msgid "Enter Zip Code Here.."
+msgstr "Introduzca el código postal"
+
+#: .\templates\RegistrationTA.html:114 .\templates\RegistrationTO.html:114
+msgid "Country"
+msgstr "Pais"
+
+#: .\templates\RegistrationTA.html:115 .\templates\RegistrationTO.html:115
+msgid "Enter Country Here.."
+msgstr "Introduzca el pais"
+
+#: .\templates\RegistrationTA.html:120 .\templates\RegistrationTO.html:119
+msgid "Phone Number"
+msgstr "Telefono"
+
+#: .\templates\RegistrationTA.html:121 .\templates\RegistrationTO.html:120
+msgid "Enter Phone Number Here.."
+msgstr "Introduzca el telefono"
+
+#: .\templates\RegistrationTA.html:127 .\templates\RegistrationTO.html:126
+msgid "Website"
+msgstr "Pagina web"
+
+#: .\templates\RegistrationTA.html:128 .\templates\RegistrationTO.html:127
+msgid "Enter Website Name Here.."
+msgstr "Introduzca pagina web"
+
+#: .\templates\RegistrationTA.html:139 .\templates\RegistrationTA.html:140
+#: .\templates\RegistrationTO.html:138 .\templates\RegistrationTO.html:139
+msgid "Repeat Email Address"
+msgstr "Repita email"
+
+#: .\templates\RegistrationTO.html:41
+msgid "Tour Operator"
+msgstr "Tour Operador"
+
+#: .\templates\RegistrationTO.html:49
+msgid "Registration Form for Tour Operators"
+msgstr "Formulario para tour operadores"
+
+#: .\templates\webTA.html:13 .\templates\webTA.html.py:48
+msgid "Travel Agent:"
+msgstr "Agencia de Viajes:"
+
+#: .\templates\webTA.html:58 .\templates\webTO.html.py:56
+msgid "Trends"
+msgstr "Tendencias"
+
+#: .\templates\webTA.html:95
+msgid "Travel Suggestions"
+msgstr "Sugerencias de viajes"
+
+#: .\templates\webTA.html:101 .\templates\webTA.html.py:104
+msgid "Search"
+msgstr "Buscar"
+
+#: .\templates\webTA.html:187
+msgid "Price"
+msgstr "Precio"
+
+#: .\templates\webTA.html:188
+msgid "$"
+msgstr "€"
+
+#: .\templates\webTA.html:204
+msgid "Origin"
+msgstr "Origen"
+
+#: .\templates\webTA.html:205
+msgid "Book"
+msgstr "Reserva"
+
+#: .\templates\webTO.html:136
+msgid "Upload"
+msgstr "Subir Ofertas"
+
+#: .\templates\webTO.html:143
+msgid "JSON File example"
+msgstr "Ejemplo de fichero JSON"
+
+#: .\templates\webTO.html:143
+msgid "here for download"
+msgstr "aqui para bajar el archivo"
+
+#: .\travel\views.py:135 .\travel\views.py:212
+msgid "User Already Registered"
+msgstr "Usuario ya registrado"
+
+#: .\travel\views.py:235 .\travel\views.py:271
+msgid "User or Password Failed"
+msgstr "Usuario o clave de acceso erronea"
+
+#: .\travel\views.py:506
+msgid "Must upload a file"
+msgstr "Debe subir un archivo"
+
+#: .\travel\views.py:513
+msgid "Invalid file type"
+msgstr "Tipo de fichero invalido"
+
+#: .\travel\views.py:696
+msgid "Unexpected Error"
+msgstr "Error inesperado"
+
+#: .\travel\views.py:700
+msgid "Travel packages uploaded"
+msgstr "Paquetes de viajes añadidos"
+
+#: .\travel\views.py:1010
+msgid "User Not Registered"
+msgstr "Usuario no registrado"
+
+#: .\travel\views.py:1070
+msgid "Reset Password"
+msgstr "Cambiar Password"
+
+#: .\travel\views.py:1077
+msgid "Password reset email send"
+msgstr "Email de cambio de clave de acceso enviado"
+
+#: .\travel\views.py:1140
+msgid "Password already reset"
+msgstr "Ya has cambiado la clave de acceso"
+
+#: templates\webTA.html:179
+msgid "\"Loading\""
+msgstr ""
